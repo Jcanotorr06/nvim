@@ -10,6 +10,7 @@ if not vim.uv.fs_stat(lazypath) then
 end
 
 vim.opt.rtp:prepend(lazypath)
+vim.o.timeoutlen = 3000
 
 local lazy_config = require "configs.lazy"
 
