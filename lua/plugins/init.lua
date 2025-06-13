@@ -307,5 +307,17 @@ return {
     config = function()
       require("diffview").setup({})
     end,
+  },
+
+  {
+    "mg979/vim-visual-multi",
+    branch = "master",
+    lazy = false,
+    enabled = true,
+    init = function()
+      vim.g.VM_maps = {
+        ["Find Under"] = "<C-d>"
+      }
+    end,
   }
 }
