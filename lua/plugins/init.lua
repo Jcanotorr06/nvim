@@ -126,7 +126,7 @@ return {
   -- lazy.nvim
   {
     "folke/noice.nvim",
-    enabled = false,
+    enabled = true,
     event = "VeryLazy",
     opts = {
       -- add any options here
@@ -295,5 +295,17 @@ return {
         ["Find Under"] = "<C-d>"
       }
     end,
+  },
+
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    ---@module "ibl"
+    ---@type ibl.config
+    opts = {},
+    enabled = true,
+    config = function ()
+      require("ibl").setup()
+    end
   }
 }
