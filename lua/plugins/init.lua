@@ -307,5 +307,14 @@ return {
     config = function ()
       require("ibl").setup()
     end
+  },
+
+  {
+    "xiyaowong/transparent.nvim",
+    enabled = true,
+    lazy = false,
+    config = function ()
+      require("transparent").setup()
+    end
   }
 }
